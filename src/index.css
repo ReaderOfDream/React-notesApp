@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#footer {
+  background-color: black;
+  text-align: center;
+}
+
+.App {
+  height: auto;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.folderItemContextMenu {
+  background-color: gray;
+  width: 200px;
+}
+
+.noteItemDragTarget {
+  border-left-style: dashed;
+  border-left-color: black;
+  border-left-width: 2px; 
+}
+
+.selected-tree-item {
+  border-style: dashed;
+  border-left-color: black;
+  border-left-width: 2px; 
+}
+
+.react-contextmenu {
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.react-contextmenu > .react-contextmenu-item {
+  cursor: pointer;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
+}
+
+.react-contextmenu > .react-contextmenu-item:hover {
+  border-bottom: blue solid 1px;
+  border-top: blue solid 1px;
+  color: blue;
+}
+
+div.searchItemTag::after {
+  content: "tag";
+  position: absolute;
+  right: 0px;
+}
+
+div.searchItemNote::after {
+  content: "note";
+  position: absolute;
+  right: 0px;
+}
+
+.note-list-item {
+  display: inline-block;
+  margin: 15px;
+}
+
+.note-list-item .remove-note {
+  display: none;
+}
+
+.note-list-item:hover .remove-note {
+  display: inline;
+  position: absolute;
+  top: '-3px';
+  right: '-1px';
+  color: darkred;
+}
+
+.note-list-item:hover .remove-note:hover {
+  color: red;
+}
+
+form.note-item-form {
+  width: 400px;
+  margin: auto;
+}
+
+.tooltip {
+  padding: 8px 10px;
+  color: #fff;
+  text-align: left;
+  text-decoration: none;
+  background-color: #373737;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.17);
+  min-height: 34px;
+}
+
+div.list-group-item {
+  color: black;
+  cursor: pointer;
+  border: 0px;
+  border-radius: unset !important
+}
+div.list-group-item.selected {
+  color: blue;
+  border-top: blue solid 1px;
+  border-bottom: blue solid 1px;
+}
+
+i.fas {
+  padding: 5px;
+}
+

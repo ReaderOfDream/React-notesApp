@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  web:
+    image: "notesapp:dev"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    stdin_open: true
+    tty: true
+
+  backend:
+    image: "notesapp:dev"
+    ports:
+      - "3001:3001"
+    command: ["npm", "run", "server"]

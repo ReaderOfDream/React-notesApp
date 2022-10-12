@@ -1,0 +1,48 @@
+{
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2015,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "extends": [
+        "airbnb",
+        "plugin:flowtype/recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors",
+        "plugin:import/warnings"
+    ],
+    "env": {
+        "browser": true,
+        "node": true
+    },
+    "plugins": [
+        "react",
+        "flowtype",
+        "import"
+    ],
+    "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [
+              ".js",
+              ".jsx"
+            ]
+          }
+        }
+    },
+    "rules": {
+        "jsx-a11y/label-has-associated-control": "off",
+        "jsx-a11y/label-has-for": "off",
+        "jsx-a11y/click-events-have-key-events": "off",
+        "jsx-a11y/no-static-element-interactions": "off",
+        "jsx-a11y/no-autofocus": "off",
+        "jsx-a11y/no-noninteractive-element-interactions": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"]}],
+        "import/prefer-default-export": "off",
+        "no-use-before-define": ["error", { "functions": false, "classes": false, "variables": true }]
+    }
+}
